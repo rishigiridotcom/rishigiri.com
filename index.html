@@ -1,19 +1,113 @@
 <!DOCTYPE html>
 <html xml:lang="en-gb" lang="en-gb">
   <head>
-  </head>
-  <body>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="http://rishigiri.in/rishi.png" type="image/x-icon" />
+    <base href="http://rishigiri.com/" />
+    <meta name="author" content="Rishi Giri" >
+   <meta name="keywords" content="Rishi Dotjs, Rishi Giri, Rishi, dotjs, Rishi Giri dotjs, CodeDotJS, Unicorn, JavaScript, Python, Node, Web Development, Web Design, Quora, Github" />
+   <meta name="description" content="Web Developer, JavaScript | Python & FOSS Enthusiast." />
+   <title>Rishi Giri</title>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+<style type = "text/css">
+@keyframes ballMove {
+  0%  {left:15px;z-index:10;width:30px;height:30px;}
+ 13% {width:40px;height:40px;}
+ 22% {left:-56px}
+ 23% {left:-57px}
+ 24% {z-index:10;width:30px;height:30px;}
+ 25% {left:-60px;z-index: -10;}
+ 27% {left:-57px}
+ 28% {left:-56px}
+ 38% {width:20px;height:20px;}
+ 49% {z-index: -10;width:30px;height:30px;}
+ 50% {left:15px;z-index: 10;}
+ 64% {width:40px;height:40px;}
+ 72% {left:86px}
+ 73% {left:87px}
+ 74% {z-index: 10;}
+ 75% {left:90px;z-index:-10;width:30px;height:30px;} 
+ 77% {left:87px}
+ 78% {left:86px}
+ 89% {width:20px;height:20px;}
+ 99% {z-index: -10;}
+ 100% {left:15px;z-index: 10;width:30px;height:30px;}
+}
 
-<form action="//formspree.io/your@email.com"
-      method="POST">
-    <input type="text" name="name" placeholder="Your Name">
-    <input type="email" name="_replyto" placeholder="Your Email">
-    <input type="text" name="message" placeholder="Your Message">
-    <input type="submit" value="Send">
-</form>
+html {
+    height: 100%
+}
 
+body{
+	background:webkit-radial-gradient(#22313F,#111);
+	background: radial-gradient(#22313F,#111);
+}
 
+.loader {
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 20%;
+	transform:translate(-50%, -50%);
+}
 
+.loader::before {
+	content: "";
+	position: absolute;
+	left:0;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: 0 0 0 3px #2574A9, 0 0 0 17px #3498DB,-3px -3px 0 #2574A9 inset;
+	z-index:2;
+}
 
-  </body>
+.loader:after {
+	content: "";
+	position: absolute;
+	left:80px;
+	top:10px;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	background-color: #913D88;
+	box-shadow:-7px -7px 0 #674172 inset;
+	-webkit-animation: ballMove 3s linear infinite;
+	animation: ballMove 3s linear infinite;
+	z-index: -10;
+}
+
+</style>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+<div class="loader"></div>
+  <script type="text/javascript">
+  $(document).ready(function() { // 1.5s
+          toastr["info"]("I'm coming on 1st of January.", "Under Construction")
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": true,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+}
+  });
+  </script>
+</body>
 </html>
