@@ -970,7 +970,7 @@ main .site-header .logo:hover a {
   font: 12px/18px "montserrat-regular", sans-serif;
   display: table-cell;
   vertical-align: middle;
-  background: rgba(0, 0, 0, 0.85);
+  background: none;
   color: #ddd;
   padding: 18px 30px 18px 75px;
   margin: 0;
