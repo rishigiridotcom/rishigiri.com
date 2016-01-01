@@ -394,7 +394,6 @@ main .site-header .logo a {
   background-size: contain;
   border-radius: 100px;
   box-shadow: white 0px 0px 1px;
-    transition: all 2s;
 }
 main .site-header .logo:hover a {
   display: block;
@@ -410,8 +409,7 @@ main .site-header .logo:hover a {
   background-size: contain;
   border-radius: 100px;
   box-shadow: white 0px 0px 1px;
-    transition: all 2s;
-  transform:rotateZ(180deg);
+  transform:rotateZ(360deg);
 }
 @media only screen and (max-width:900px) {
   main.row {
