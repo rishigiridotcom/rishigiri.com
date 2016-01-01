@@ -407,11 +407,11 @@ main .site-header .logo:hover a {
   color: transparent;
   width: 100px;
   height: 100px;
-  background: url("../images/logo/1.gif") no-repeat;
   background-size: contain;
   border-radius: 100px;
   box-shadow: white 0px 0px 1px;
     transition: all 2s;
+  transform:rotateZ(180deg);
 }
 @media only screen and (max-width:900px) {
   main.row {
