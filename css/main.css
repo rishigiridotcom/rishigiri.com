@@ -404,8 +404,6 @@ main .site-header .logo:hover a {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
-  width: 100px;
-  height: 100px;
   background-size: contain;
   border-radius: 100px;
   box-shadow: white 0px 0px 1px;
@@ -1121,8 +1119,8 @@ footer a:hover, footer a:focus {
     margin: 0 6px;
   }
   .love {
-    height: 80px;
-    width: 80px;
+    height: 30px;
+    width: 30px;
   }
 }
 
