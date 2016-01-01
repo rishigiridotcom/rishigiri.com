@@ -1107,8 +1107,8 @@ footer a:hover, footer a:focus {
 @media only screen and (max-width:600px) {
 
   .love {
-    height: 55px;
-    width: 55px;
+    height: 52px;
+    width: 52px;
   }
 }
 @media only screen and (max-width:400px) {
@@ -1119,8 +1119,8 @@ footer a:hover, footer a:focus {
     margin: 0 6px;
   }
   .love {
-    height: 30px;
-    width: 30px;
+    height: 42px;
+    width: 42px;
   }
 }
 
