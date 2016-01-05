@@ -71,7 +71,7 @@ function draw(img, w, h) {
 
         ctx.fillStyle = colors[i];
 
-        ctx.globalAlpha = 0.7;
+        ctx.globalAlpha = 0.4;
 
         ctx.fillRect(0, lineHeight * i, w, lineHeight);
 
