@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>India</title>
+  <meta name="description" content="">
+  <meta name="author" content="Rishi Giri" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '171745233184461',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 2%">
+        <h1> FOR INDIAN ARMY </h1>
+        <a href="/">
+          <img class="logo" src="images/india.png" alt="">
+        </a>
+        <a href="#" class="button" id="btn-upload"><small>Your Image</small></a>
+        <input type="file" name="file" id="imageLoader" name="imageLoader" />
+        <a href="#" class="button" id="btn-download" download="france.png">Download</a>
+        <canvas id="imageCanvas"></canvas>
+        <div class="fb-share-button" data-href="http://rishigiri.com/India" data-layout="button"></div>
+      </div>
+    </div>
+  </div>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
