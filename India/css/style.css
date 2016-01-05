@@ -176,11 +176,7 @@ td, th {
   }
 }
 
-.fb-share-button {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-}
+
 html {
   font-size: 62.5%
 }
