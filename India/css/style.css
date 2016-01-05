@@ -175,6 +175,12 @@ td, th {
     width: 80%
   }
 }
+
+.fb-share-button {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
 html {
   font-size: 62.5%
 }
