@@ -33,7 +33,10 @@ a {
 a:active, a:hover {
   outline: 0
 }
-
+.more {
+text-align: center;
+font-weight: 100px;
+}
 abbr[title] {
   border-bottom: 1px dotted
 }
