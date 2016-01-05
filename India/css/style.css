@@ -176,6 +176,9 @@ td, th {
   }
 }
 
+.fb-share-button {
+margin-left: 10px;
+}
 
 html {
   font-size: 62.5%
