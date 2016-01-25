@@ -157,6 +157,19 @@ form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
 }
+#sendmessage {
+  border:1px solid #fff;
+  display:none;
+  text-align:center;
+  padding:15px 12px 15px;
+  margin:10px 0;
+  font-weight:600;
+  margin-bottom:30px;
+}
+
+#sendmessage.show,.show  {
+  display:block;
+}
     </style>
         <script src="js/prefixfree.min.js"></script>
         <script src="contact/jquery.js"></script>
@@ -164,6 +177,9 @@ form input[type="submit"]:focus {
   <body>
     	<section id="hire">
     <h1>Under Construction</h1>
+    <div id="sendmessage">
+      Your message has been sent. Thank you!
+    </div>
     <!-- form starts -->
     <form action="contact/contact.php" method="post" role="form" class="contactForm">
 	      <div class="field name-box form-group" >
@@ -186,6 +202,6 @@ form input[type="submit"]:focus {
 </section>
     <script src='js/jquery.min.js'></script>
         <script src="js/index.js"></script>
-        <script src="contact/validtion.js"></script>
+        <script src="contact/valid.js"></script>
   </body>
 </html>
