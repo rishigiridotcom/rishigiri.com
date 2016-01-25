@@ -1,5 +1,5 @@
 <?php
 
-define("WEBMASTER_EMAIL", 'rushforlinux@email.com');
+define("WEBMASTER_EMAIL", 'rushforlinux@gmail.com');
 
 ?>

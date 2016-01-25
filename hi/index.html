@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
@@ -34,7 +34,13 @@ body section h1 {
   color: black;
   text-shadow:black 0px 0px 5px;
 }
-
+img {
+  height:20px;
+  width: 20px;
+}
+img:hover {
+  content: url(img/big.png);
+}
 form {
   width: 58.33333%;
   margin: 0 auto;
@@ -153,31 +159,33 @@ form input[type="submit"]:focus {
 }
     </style>
         <script src="js/prefixfree.min.js"></script>
+        <script src="contact/jquery.js"></script>
   </head>
   <body>
     	<section id="hire">
     <h1>Under Construction</h1>
     <!-- form starts -->
     <form action="contact/contact.php" method="post" role="form" class="contactForm">
-	      <div class="field name-box">
-		        <input type="text" id="name" placeholder="Enter you name"/>
+	      <div class="field name-box form-group" >
+		        <input type="text" id="name" name="name" placeholder="Enter you name" id="name" data-rule="maxlen:4" />
         		<label for="name">Name</label>
-		        <span class="ss-icon">check</span>
+		        <span class="ss-icon "><img src="img/small.png"></span>
 	      </div>
-	      <div class="field email-box">
-		        <input type="text" id="email" placeholder="name@gmail.com"/>
+	      <div class="field email-box form-group">
+		        <input type="text" id="email" placeholder="name@gmail.com"  name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
 		        <label for="email">Email</label>
-		        <span class="ss-icon">check</span>
+		        <span class="ss-icon"><img src="img/small.png"></span>
 	      </div>
-	      <div class="field msg-box">
-		        <textarea id="msg" rows="4" placeholder="Enter your message"/></textarea>
+	      <div class="field msg-box form-group">
+		        <textarea id="msg" rows="4" placeholder="Enter your message" name="message" data-rule="required" data-msg="Please write something for me"/></textarea>
 		        <label for="msg">MESSAGE</label>
-		        <span class="ss-icon">check</span>
+		        <span class="ss-icon"><img src="img/small.png"></span>
 	      </div>
 	      <input class="button" type="submit" value="Send" />
   </form>
 </section>
     <script src='js/jquery.min.js'></script>
         <script src="js/index.js"></script>
+        <script src="contact/validtion.js"></script>
   </body>
 </html>
