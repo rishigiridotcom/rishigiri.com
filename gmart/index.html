@@ -35,20 +35,30 @@
   </form>
   <iframe id="demoCode"></iframe>
   <script src="js/index.js"></script>
-  <script type="text/javascript">
-    function select_all(el) {
-        if (typeof window.getSelection != "undefined" && typeof document.createRange != "undefined") {
-            var range = document.createRange();
-            range.selectNodeContents(el);
-            var sel = window.getSelection();
-            sel.removeAllRanges();
-            sel.addRange(range);
-        } else if (typeof document.selection != "undefined" && typeof document.body.createTextRange != "undefined") {
-            var textRange = document.body.createTextRange();
-            textRange.moveToElementText(el);
-            textRange.select();
-        }
+  <script>
+  function SelectText(element) {
+    var doc = document
+        , text = doc.getElementById(element)
+        , range, selection
+    ;    
+    if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) {
+        selection = window.getSelection();        
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
     }
+}
+
+document.onclick = function(e) {    
+    if (e.target.className === 'click') {
+        SelectText('selectme');
+    }
+};
 </script>
 </body>
 
