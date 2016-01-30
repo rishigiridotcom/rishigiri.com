@@ -30,7 +30,7 @@ function createscript() {
   for (var i = 1; i <= intxt1; i++) {
     document.CreateTable.resulttable.value += ("<tr>\n")
     for (var j = 1; j <= intxt; j++) {
-      document.CreateTable.resulttable.value += ("<td></td>\n")
+      document.CreateTable.resulttable.value += ("<td> "+"</td>\n")
     }
     document.CreateTable.resulttable.value += ("</tr>\n");
   }
