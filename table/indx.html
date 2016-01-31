@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>GMART-TABLE</title>
+  <link rel="shortcut icon" href="http://rishigiri.in/rishi.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <form name='CreateTable' class='TableWizard'>
+    <div class='Controls'>
+      <input name='CreateTableRows' type='number' placeholder='Fill here "Rows"...' onkeyup='createscript();maketabledemo();' min='1' max='50' value='1' />
+      <br />
+      <input name='CreateTableColomns' type='number' placeholder='Fill here "Columns"...' onkeyup='createscript();maketabledemo();' min='1' max='50' value='1' />
+      </span>
+      <br />
+      <input name='CreateTableBorder' type='range' title='Fill here "Border Width"...' onchange='createscript();maketabledemo();uv(this.value);' min='1' max='50' oninput='TableBorderAmount.value=CreateTableBorder.value' value='0' />
+      <span><output name='TableBorderAmount' for='CreateTableBorder'>0</output>px</span>
+      <br />
+      <input name='CreateTableCellPadding' type='range' title='Fill here "Cell Padding"...' onchange='createscript();maketabledemo();' min='1' max='50' oninput='TableCellPaddingAmount.value=CreateTableCellPadding.value' value='0' />
+      <span><output name='TableCellPaddingAmount' for='CreateTableCellPadding'>0</output>px</span>
+      <br />
+      <input name='CreateTableCellSpacing' type='range' title='Fill here "Cell Spacing"...' onchange='createscript();maketabledemo();' min='1' max='50' oninput='TableCellSpacingAmount.value=CreateTableCellSpacing.value' value='0' />
+      <span><output name='TableCellSpacingAmount' for='CreateTableCellSpacing'>0</output>px</span>
+      <br />
+      <input name='CreateTableWidth' type='range' title='Fill here "Width of Table"...' onchange='createscript();maketabledemo();' min='1' max='100' oninput='TableWidthAmount.value=CreateTableWidth.value' value='50' />
+      <span><output name='TableWidthAmount' for='CreateTableWidth'>100</output>%</span>
+    </div>
+    <div class="CodeView">
+      <textarea name='resulttable' rows='12' placeholder='Code will be show here...' onchange='createscript();maketabledemo();' id='code'></textarea>
+    </div>
+    <br />
+  </form>
+  <iframe id="demoCode"></iframe>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
