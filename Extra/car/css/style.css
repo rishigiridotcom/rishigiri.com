@@ -1,0 +1,153 @@
+html,body
+{
+    margin: 0px;
+    padding: 0;
+   
+}
+.container
+{
+    margin: 0;
+    padding: 0;
+   
+
+    
+}
+.left,.right,.center
+{
+    background-color: 33CCFF; 
+}
+
+
+
+label{
+    
+    margin-bottom: 0px;
+   font-size: 15px;
+   font-weight: bold;
+   color: #333333;
+   width: auto;
+   font-family:"calluna sans",sans-serif;
+   word-spacing: 7px;
+   text-align: center;
+   text-transform: uppercase;
+   text-align: left;
+}
+#fname,#lname,#contact,#date,#email,#from,#rmks,#time,#to,#landmark,#Distric
+{
+   height: 45px;
+   margin-bottom: 15px;
+   border-color: #3399ff;
+   text-align: center;
+   
+}
+
+.from,.to,.date,.time{
+    width: 350px;
+    height: 50px;
+    margin-left: 0px;
+    
+    background-color: rgba(151, 22, 27, 1);
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF ;
+    font-family:"calluna sans",sans-serif;
+}
+.heading{
+    font-family:"calluna sans",sans-serif;
+    text-align: center;
+    
+    
+    text-decoration-color: #0099ff;
+    
+}
+ul{
+    margin-top: 10px;
+}
+h1{
+  color: #0099ff;  
+}
+.left,.right
+{
+
+
+    width: 350px;
+    font-family:"calluna sans",sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    color: black ;
+    height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cars
+{
+    font-size: 20px;
+    color: black;
+    word-spacing: 10px;
+    font-family:"calluna sans",sans-serif;
+    font-weight: bold;
+}
+.c_type
+{
+    height: 22px;
+    width: 25px;
+    border-radius: 50%;
+}
+#S_btn
+{
+ height: 80px;
+ width: 300px;
+ background-color:rgba(151, 22, 27, 1); 
+ border: 1px solid transparent;
+ 
+ border-radius: 5px;
+ color: black;
+ font-family:"calluna sans",sans-serif;
+ font-size: 20px;
+}
+#rmks{
+    height: 100px;
+    width: 700px;
+    
+    border-radius: 5px;
+    margin-left: 12px;
+    
+}
+.rmks{
+  margin-left: 12px;  
+}
+
+tr{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+     background-color: blue;
+}
+#datetimepicker,#datetimepicker1{
+    background-color: transparent;
+   
+    border: none;
+}
+#icon{
+   
+  height: 45px;
+
+}
+
+#ic
+{
+
+margin-top: 10px;
+
+}
+#date,#time
+{
+ 
+width: 320px;;
+ 
+ 
+}
