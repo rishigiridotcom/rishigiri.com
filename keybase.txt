@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/rishigiri
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rishigiri.com
+  * I am rishigiri (https://keybase.io/rishigiri) on keybase.
+  * I have a public key with fingerprint FB0A B6A6 8777 3A1E 2F83  05EB 332F 38BC 7849 158A
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e2d297749a42aa653537933a04bd36a165b4ec963c236708a41a98d1ea14f4390a",
+            "fingerprint": "fb0ab6a687773a1e2f8305eb332f38bc7849158a",
+            "host": "keybase.io",
+            "key_id": "332f38bc7849158a",
+            "kid": "0101e2d297749a42aa653537933a04bd36a165b4ec963c236708a41a98d1ea14f4390a",
+            "uid": "56aba050aa9fe773cde34455178c4419",
+            "username": "rishigiri"
+        },
+        "service": {
+            "hostname": "rishigiri.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458283456,
+    "expire_in": 157680000,
+    "prev": "78b628f7a5a04f057ecf211692f0eb5d6a3ee8e3a4ff9151d3f8732a9adaffb0",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBRRGN5VUzPSJCNDQhsIsUxm5py5bYtgVBYRQRezDNczM2fWSXdn
+nZ01xaQ06i3RIhOtl8pSsAcJlAzx0kVKoYKEpAtaUKG4EopkWHZG6iV67Lwczn++
+7/u//zvn0epIR5wzVJdbXxhO+uQcHmgKOfKmbvZXUbKhVlKuKqoEL2+4VMVBy1Oi
+q5SLohmawazKSoIAJQRZhHgOcECQAEA0lFXAI4bnZIgViQcKC3iBFhFkkCSqDEYM
+1CCQaERlUpru92IzYOp+i8hqMo1kHvGiIAgAkQ6aCGgOywCwGhBlRRChxHCiTSw2
+gjaDmJNREGfpBqmRg2fZ3j/w/9l3aFmO45GMaI5GSNIwsayoGEDIcYwgKhAykg0M
+YtOPfJigTT1YrHt1U6eqMylSLtcVbCdrj/I3JEsxfIQdMA3LUIxSclVsWQGXzbQq
+Azb0FJY9v0U8su5XSZCEUI7NoG74KRdDkIql26oM5ERWBJDjMylcEdBN7NFtBCfw
+Ik2W3QaXE0lBlHlW1ATEkTA0mhOworEMw0usRmOZU3kEMBYxQFDTSK6MCjRRACyS
+kIo08naUPVaZ36BckNhEXiIZ1L1+ZIVMTFUP9p+IcjjjHNErIuwP5ohbuebPtwuf
+jVnKv1Gw+KUi/cB0fFp2lLtrT2x4a1tbaOLc7dFDY31z7oZ9P0BzbZEyvG1o6XhL
+TWJScIevNX9mZD55RM/+/DU6GjyPHOnoNco6Z3Nvst1SZeKxt/DeQHfMrfDVCHoq
+oynt5UTGqqmGtYVzDm08OfKjd1cCvOi8W8R+Sxl9ytVVt1ZnXZ4ci4xeyHnT2bv+
+1ab2xYRnsffhEff0xhIN9zQnHm6cWHe6I8ZKnWw5+N2bMrM55drohfr5vbUR6bkv
+NjyMOdmXvD2h8bqDzhk/M7v/fc/gzis52XOvF2Ao6nzxpdmKki3vmrKGPrSnNuzO
+iy/oUmIfOwtqfrofuH13Op+go78AIlg+yQ==
+=pYWS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rishigiri
+
+==================================================================
