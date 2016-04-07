@@ -1,0 +1,213 @@
+<html>
+
+<head>
+
+    <link rel="shortcut icon" href="http://rishigiri.in/rishi.png" type="image/x-icon" />
+
+    <title>
+
+        R3D
+
+    </title>
+
+    <style type="text/css">
+
+        html {
+
+            height: 100%;
+
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 960, from(#223f2f), to(#7c006f)) no-repeat #7c006f;
+
+            background: -moz-radial-gradient(50% 50% 0deg, ellipse farthest-corner, #f700dd, #7c006f, #7c006f 170%);
+
+            -webkit-user-select: none;
+
+            cursor: move;
+
+        }
+
+        body {
+
+            margin: 0;
+
+        }
+
+        ul, li {
+
+            margin: 0;
+
+            list-style: none;
+
+            float: left;
+
+        }
+
+        ul {
+
+            -webkit-transform-style: preserve-3d;
+
+            -moz-transform-style: preserve-3d;
+
+            -o-transform-style: preserve-3d;
+
+            -ms-transform-style: preserve-3d;
+
+            transform-style: preserve-3d;
+
+        }
+
+        li {
+
+            margin: 10px 15px;
+
+            width: 150px;
+
+            height: 90px;
+
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 50, from(rgba(0, 0, 0, 0.2)), to(transparent)) no-repeat rgba(255, 255, 255, 0.1);
+
+            background: -moz-radial-gradient(50% 50% 0deg, ellipse farthest-corner, rgba(0, 0, 0, 0.2), transparent, transparent 100%), rgba(255, 255, 255, 0.1);
+
+            -webkit-user-select: none;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.6);
+
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+            box-shadow: white 0px 0px 20px;
+
+            color: #FFF;
+
+            text-shadow:white 0px 0px 10px;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+            font: 70px "Arial Black", Gadget, sans-serif;
+
+        }
+
+        ul li div {
+
+            transform: translateZ(70px);
+
+            -ms-transform: translateZ(70px);
+
+            -moz-transform: translateZ(70px);
+
+            -webkit-transform: translateZ(70px);
+
+            -o-transform: translateZ(70px);
+
+            position: absolute;
+
+            width: 150px;
+
+        }
+
+        .container {
+
+            width: 1020px;
+
+            margin: 250px auto;
+
+            position: relative;
+
+        }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <ul>
+
+            <li>
+
+                <div><b>R</b></div>
+
+            </li>
+
+            <li>
+
+                <div><b>I</b></div>
+
+            </li>
+
+            <li>
+
+                <div><b>S</b></div>
+
+            </li>
+
+            <li>
+
+                <div><b>H</b></div>
+
+            </li>
+
+            <li>
+
+                <div><b>I</b></div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script>
+
+        var mouseX = null,
+
+            mouseY = null,
+
+            rotationLeftRight = null,
+
+            rotationTopBottom = null,
+
+            centerX = null,
+
+            centerY = null,
+
+            agleRotation = null;
+
+        $('html').mousemove(function(e) {
+
+            centerX = $(this).width() / 2;
+
+            centerY = $(this).height() / 2;
+
+            mouseX = (e.pageX - this.offsetLeft) - centerX;
+
+            mouseY = (e.pageY - this.offsetTop) - centerY;
+
+            rotationLeftRight = mouseX;
+
+            rotationTopBottom = mouseY;
+
+            agleRotation = (Math.abs(rotationTopBottom) + Math.abs((rotationLeftRight))) / 10;
+
+            $('ul').css({
+
+                transform: "rotate3d(" + rotationTopBottom + ", " + rotationLeftRight + ", " + 0 + ", " + agleRotation + "deg)"
+
+            });
+
+        })
+
+    </script>
+    
+</body>
+
+</html>
