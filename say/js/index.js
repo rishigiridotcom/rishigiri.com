@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['I wanted to say something', 'I think I should not ', 'but but', ' I miss you.' 'and your emoji', 'Just wanted to say,' 'Be safe and', 'Be awesome, sweetheart!', 'Have a great day ahead!', '^_^', 'For the OAO Mabast,', 'whose soul is pure', 'and...', 'smile is beautiful', 'she is just', '^_^', '♡'], 'text',['tomato','rebeccapurple','lightblue']);
+ consoleText(['I wanted to say something', 'I think I should not ', 'but but', ' I miss you', 'and your emoji', 'Just wanted to say,' 'Be safe and', 'Be awesome, sweetheart!', 'Have a great day ahead!', '^_^', 'For the OAO Mabast,', 'whose soul is pure', 'and...', 'smile is beautiful', 'she is just', '^_^', '♡'], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
