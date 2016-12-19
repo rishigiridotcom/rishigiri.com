@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['I wanted to say something', 'I think I should not ', 'but but', ' I miss you', 'and your emoji', 'Just wanted to say,' 'Be safe and', 'Be awesome, sweetheart!', 'Have a great day ahead!', '^_^', 'For the OAO Mabast,', 'whose soul is pure', 'and...', 'smile is beautiful', 'she is just', '^_^', '♡'], 'text',['tomato','rebeccapurple','lightblue']);
+ consoleText(['Actually, I wanted to say something', 'and I think I should not.', 'But but but', 'I miss you when you are not here', 'and', 'your emoji.', 'Last...', 'Be safe and', 'be awesome, sweetheart!', 'This is just for the OAO Mabast', 'to whom', 'I like irritating', 'everyday.', 'And....', 'I lied about the dream I saw.', 'Becuase', 'I could never use those words for you.', '^_^' ], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -36,7 +36,7 @@ function consoleText(words, id, colors) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, 100)
   window.setInterval(function() {
     if (visible === true) {
       con.className = 'console-underscore hidden'
